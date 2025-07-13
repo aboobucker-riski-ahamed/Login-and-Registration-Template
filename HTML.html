@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Free Login and Registration Form</title>
+        <link rel="stylesheet" href="CSS.css">
+        <script src="JAVASCRIPT.js" defer></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="tabs">
+                <button id="loginBtn" onclick="showLogin()">Login</button>
+                <button class="active" id="registerBtn" onclick="showRegister()">Register</button>
+            </div>
+
+            <div class="form-container">
+
+                <!-- Login Form -->
+                <div class="form" id="loginForm">
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="you@example.com" id="loginEmail" />
+                    </div>
+
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" id="loginPassword" />
+                    </div>
+
+                    <button class="submit-btn" onclick="loginUser()">
+                        <i>🔑</i> Login
+                    </button>
+
+                    <a href="#" class="forgot-password">Forgot your password?</a>
+                </div>
+
+
+                <!-- Register Form -->
+                <div class="form active" id="registerForm">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Your Name" id="name" />
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="you@example.com" id="email" />
+                    </div>
+
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" id="password" />
+                    </div>
+
+                    <div class="input-group">
+                        <label>Confirm Password</label>
+                        <input type="password" id="confirmPassword" />
+                    </div>
+
+                    <button class="submit-btn" onclick="registerUser()">
+                        <i>👤</i> Register
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="or">Or continue with</div>
+             <div class="social">
+                <div class="social-icon">G</div>
+                <div class="social-icon">F</div>
+                <div class="social-icon">I</div>
+             </div>
+        </div>
+
+        <div id="popupMessage" class="popup-message"></div>
+    </body>
+
+</html>
